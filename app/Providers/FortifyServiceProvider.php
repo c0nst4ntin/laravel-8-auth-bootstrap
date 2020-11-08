@@ -42,7 +42,19 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::verifyEmailView(function() {
-            return view('auth.verify');
+            return view('auth.verify-email');
+        });
+
+        Fortify::requestPasswordResetLinkView(function() {
+            return view('auth.forgot-password');
+        });
+
+        Fortify::resetPasswordView(function() {
+            return view('auth.reset-password');
+        });
+
+        Fortify::confirmPasswordView(function() {
+            return view('auth.confirm-password');
         });
     }
 }
