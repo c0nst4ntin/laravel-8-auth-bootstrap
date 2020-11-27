@@ -21,8 +21,6 @@
         </div>
 
         <button type="submit" class="btn btn-block btn-primary">Login</button>
-
-        <a href="{{ route('password.request') }}">Forgot Password?</a>
     </form>
 </div>
 @endsection
